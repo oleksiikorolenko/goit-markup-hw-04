@@ -126,6 +126,10 @@ padding: 188px 0;
     background-color: #2E2F42;
    margin-left: auto;
    margin-right: auto;
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1-min.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   
 }
 
 .hero-title{
@@ -219,6 +223,17 @@ color: #2E2F42;
     line-height: 1.5;
     letter-spacing: 0.02em;
 
+}
+
+.values-logo{
+    background-color: #F4F4FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    padding: 24px 0;
+    margin-bottom: 8px;
 }
 
 /* Team */
