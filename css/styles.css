@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
 
 ul{
     padding: 0;
+    list-style-type: none;
 }
 
 img{
@@ -78,6 +79,9 @@ img{
     line-height: 24px;
     text-decoration: none;
     letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-links .link:hover,
 .page-links .link:focus{
@@ -94,6 +98,9 @@ img{
     line-height: 24px;
     letter-spacing: 0.02em;
     text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-links .link:hover,
 .address-links .link:focus{
@@ -263,8 +270,11 @@ color: #2E2F42;
     }
 
 .list-item{
+    background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
 border-radius: 0px 0px 4px 4px;
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
 }
 
 
@@ -290,15 +300,37 @@ padding: 32px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 
-}
-
-.list-item{
-    background-color: #FFFFFF;
 }
 
 .team{
     background-color: #F4F4FD;
+}
+
+.team-soc-list{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-soc-link{
+    display: block;
+}
+
+.soc-link-icon{
+    fill: #4D5AE5;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.soc-link-icon:hover,
+.soc-link-icon:focus{
+    fill: #404BBF;
+    
 }
 
 /* Portfolio */
@@ -327,6 +359,14 @@ padding: 32px 0;
 
 .works-list-card{
     width: calc((100% - 48px) / 3);
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.works-list-card:hover,
+.works-list-card:focus{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 
 }
 
