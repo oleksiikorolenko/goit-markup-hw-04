@@ -84,10 +84,25 @@ img{
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-links .link:hover,
-.page-links .link:focus{
+.page-links .link:focus,
+.link.current{
     color: #404BBF;
 }
 
+.link.current{
+    position: relative;
+}
+
+.link.current::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #404BBF;
+}
 
 
 
@@ -362,6 +377,7 @@ padding: 32px 0;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+
 }
 
 .works-list-card:hover,
@@ -370,12 +386,36 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
+.works-list-card:hover .popup-text,
+.works-list-card:focus .popup-text{
+transform: translateY(0);
+}
+
 
 .portfolio-card-text{
 padding: 32px 16px;
 
     border: 1px solid #E7E9FC;
 border-top: none;
+}
+
+.popup-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.popup-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 32px;
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    height: 100%;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .portfolio-list-titles{
@@ -435,6 +475,29 @@ color: #F4F4FD;
     max-width: 264px;
 }
 
+.soc-header{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+        margin-bottom: 16px;
+}
 
+.footer-soc-list {
+    display: flex;
+    gap: 16px;
+   
+}
+
+.footer-soc-link {
+    display: block;
+}
+
+.footer-conteiner{
+    display: flex;
+    gap: 120px;
+    justify-content: baseline;
+}
 
 
