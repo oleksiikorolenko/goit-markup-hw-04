@@ -337,7 +337,7 @@ padding: 32px 0;
 .team-soc-item{
     height: 40px;
     width: 40px;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 
 }
 
@@ -349,6 +349,7 @@ padding: 32px 0;
     height: 100%;
     background-color: #4D5AE5;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-link-icon{
@@ -507,7 +508,7 @@ color: #F4F4FD;
 .footer-soc-item{
     width: 40px;
     height: 40px;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .footer-soc-link {
@@ -518,6 +519,7 @@ color: #F4F4FD;
     height: 100%;
     background-color: #4D5AE5;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
